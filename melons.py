@@ -32,9 +32,11 @@ class Melon(object):
                                              self.melon_type)
 
 # FIXME: Add Squash class definition here.
-# class Squash(Melon):
-#     def __init__(self, )
+class Squash(Melon):
+    """ Squash """
 
-
-#     def prep_and_paint(self, ):
-#         robots.painterbot.paint(self)
+    def prep(self):
+        """ Prepare the squash """
+        
+        super().prep()
+        robots.painterbot.paint(self)
